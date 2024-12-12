@@ -1,0 +1,80 @@
+/* style.css */
+
+/* Warna Utama */
+:root {
+    --warna-latar-belakang: #f7dc6f;
+    --warna-teks: #ff69b4;
+    --warna-link: #03a9f4;
+    --warna-hover-link: #ff9800;
+    --warna-latar-belakang-form: #fff;
+    --warna-border-form: #ddd;
+    --warna-teks-label: #666;
+    --warna-latar-belakang-input: #f9f9f9;
+    --warna-border-input: #ccc;
+    --warna-tombol-submit: #4CAF50;
+    --warna-teks-tombol-submit: #fff;
+    --warna-hover-tombol-submit: #3e8e41;
+  }
+  
+  /* Body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--warna-latar-belakang);
+  }
+  
+  /* Heading */
+  h1 {
+    color: var(--warna-teks);
+  }
+  
+  /* Link */
+  a {
+    text-decoration: none;
+    color: var(--warna-link);
+  }
+  
+  a:hover {
+    color: var(--warna-hover-link);
+  }
+  
+  /* Form */
+  form {
+    margin-top: 20px;
+    background-color: var(--warna-latar-belakang-form);
+    padding: 20px;
+    border: 1px solid var(--warna-border-form);
+    border-radius: 10px;
+  }
+  
+  /* Label */
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--warna-teks-label);
+  }
+  
+  /* Input */
+  input[type="text"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid var(--warna-border-input);
+    border-radius: 4px;
+    background-color: var(--warna-latar-belakang-input);
+  }
+  
+  /* Tombol Submit */
+  input[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: var(--warna-tombol-submit);
+    color: var(--warna-teks-tombol-submit);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: var(--warna-hover-tombol-submit);
+  }

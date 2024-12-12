@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Silahkan masukkan input</h1>
+        </header>
+        <main>
+            <form method="POST">
+                <label for="user_input">Input:</label>
+                <input type="text" id="user_input" name="user_input" required>
+                <button type="submit">Kirim</button>
+            </form>
+            {% if result %}
+            <p class="result">{{ result }}</p>
+            {% endif %}
+        </main>
+    </div>
+</body>
+</html>
